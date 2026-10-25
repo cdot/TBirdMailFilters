@@ -1,7 +1,7 @@
 {
   "name": "tbfilters2gmail-js",
   "version": "1.0.0",
-  "description": "Node.js port inspired by mlocati/tbfilters2gmail: migrate Thunderbird filters to Gmail",
+  "description": "Explore Thunderbird filters and export to Gmail",
   "type": "module",
   "private": true,
   "scripts": {

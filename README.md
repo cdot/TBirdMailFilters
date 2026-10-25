@@ -22,13 +22,14 @@ npm start -- --help
 ```
 
 ## Tell the the program where Thunderbird data files are
-You can also define an environment variable `TBIRD_INSTALL`. Shouldn't be needed on Linux.
 ```sh
-npm start -- --tbird 'C:\Users\YourUserName\AppData\Roaming\Thunderbird'
+npm start -- --tbird 'path/to/thunderbird/install'
 ```
+The program will automatically try to find your data files be looking in the places Thunderbird usually puts them. The `--tbird` option will override this, as will the value of the environment variable `TBIRD_INSTALL`.
+
 Thunderbird data directories are normally found in:
 - Linux `~/.thunderbird`
-- Windows `'C:\Users\YourUserName\AppData\Roaming\Thunderbird`
+- Windows `C:\Users\YourUserName\AppData\Roaming\Thunderbird`
 - MacOS
   - Open Finder.
   - Hold down the Option key and click Go in the top menu bar.
@@ -43,7 +44,7 @@ npm start -- -Profiles
 ## Get a list of mail accounts in a profile.
 `--profile` isn't needed if you want the default profile.
 ```sh
-npm start -- --profile "w178654.default" -Accounts
+npm start -- --profile "w178654.dinsdale" -Accounts
 ```
 
 ## Get a list of filter rules
