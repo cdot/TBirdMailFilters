@@ -8,7 +8,12 @@ import { Gmail } from "./Gmail.js";
 import { Accounts } from "./Accounts.js";
 import { Profiles } from "./Profiles.js";
 
+// Linux default location of thunderbird data files
 let thunDir = `${process.env.HOME}/.thunderbird`;
+
+// Override with env var
+if (process.env.TBIRD_INSTALL)
+  thunDir = process.env.TBIRD_INSTALL;
 
 function usage(mess) {
   const DESCRIPTION = [
