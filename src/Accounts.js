@@ -18,7 +18,8 @@ export class Accounts {
       level[keys[0]] = value;
     }
 
-    eval(js);
+    // Some prefs.js start with a # line
+    eval(js.replace(/^#.*?\n/g, ""));
     for (const server of Object.values(prefs.mail.server)) {
       this[server.name] = server.directory;
     }

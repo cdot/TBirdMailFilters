@@ -9,7 +9,6 @@
     "test": "node --test"
   },
   "dependencies": {
-    "googleapis": "^144.0.0",
     "posix-getopt": "^1.2.1"
   },
   "engines": {

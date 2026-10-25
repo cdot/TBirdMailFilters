@@ -66,4 +66,7 @@ Thunderbird's condition/action formats and Gmail's search syntax are quite diffe
 
 ## Develop
 
-Tests are run by `node --test` in the root directory.
+Tests are run by
+```sh
+npm test
+```
